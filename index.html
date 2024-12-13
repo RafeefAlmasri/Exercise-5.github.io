@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Template</title>
+    <style>
+          @font-face{
+            font-family: My Font;
+            src: url(../Media/Lora-Italic-VariableFont_wght.ttf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: My Font;
+            line-height: 1.6;
+        }
+        .hero {
+            background-image: url('../Media2/images.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero a:hover {
+            background-color: #0056b3;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+           
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .work-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .work-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .features-container {
+            background: #f9f9f9;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            flex: 1 1 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .newsletter {
+            background: #f4f4f4;
+            padding: 40px 20px;
+            margin-top: 20px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .work-container img {
+                max-width: 100%;
+            }
+
+            .features-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+        nav {
+            text-align: right;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .R{
+            background: #f9f9f9;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" style="color: white;">Website Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Responsive Flexbox Template</h1>
+        <p>A freebie by Tutorialzine.</p>
+        <a href="#">DOWNLOAD IT HERE</a>
+    </section>
+
+    <section>
+        <h2>Some Of Our Work</h2>
+        <p>Explore some of our recent projects. We take pride in delivering high-quality designs and solutions.</p>
+        <div class="work-container">
+            <img src="../Media2/images (1).jpg" alt="Image 1">
+            <img src="../Media2/images (2).jpg" alt="Image 2">
+            <img src="../Media2/images (3).jpg" alt="Image 3">
+            <img src="../Media2/images (4).jpg" alt="Image 4">
+        </div>
+    </section>
+
+    <section class="R">
+        <h2>Features and Services</h2>
+        <p>Our team offers a range of services tailored to meet your needs.</p>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Photography</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+
+            </div>
+            <div class="feature">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+
+            </div>
+            <div class="feature">
+                <h3>Content Editing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta architecto nisi tempora. Quo veritatis ea omnis vero ducimus aliquid, dolore possimus dolores incidunt quisquam pariatur id dolor tempore rerum.</p>
+        <br>
+        <form>
+            <input type="email" placeholder="Email">
+            <button class="btn-primary" type="submit">Subscribe Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024.. All Rights Reserved..</p>
+    </footer>
+</body>
+</html>
